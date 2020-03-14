@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.re21.bouquiniste.dao.RoleMapper">
+    <insert id="insertRoleUser">
+        insert into role_user (user_id,role_id)
+        values
+        (#{user_id},#{role_id})
+    </insert>
+    <insert id="insertRole">
+        insert into roles(role_id,role)
+        values
+        (#{role_id},#{role})
+    </insert>
+
+    <select id="getRoleByRoleId" resultType="com.re21.bouquiniste.modules.Role">
+        select * from roles where role_id=#{id}
+    </select>
+    <select id="getRoleByUserId" resultType="com.re21.bouquiniste.modules.Role">
+        select r.* from roles r, role_user ru where ru.user_id = #{user_id} and ru.role_id = r.role_id;
+    </select>
+    <select id="getSize" resultType="java.lang.Integer">
+        select count(role_id) from roles;
+    </select>
+</mapper>

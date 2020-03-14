@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.re21.bouquiniste.dao.BookMapper">
+    <insert id="addBook">
+        insert into books (book_id,book_name,book_desc,book_num,image_location,tags,hasDone)
+        values
+        (#{book_id} ,#{book_name},#{book_desc},#{book_num},#{image_location},#{tags},#{hasDone})
+    </insert>
+    <update id="setBookStateById">
+        set state=#{state} where book_id=#{id};
+    </update>
+
+    <select id="getBookByName" resultType="com.re21.bouquiniste.modules.Book" parameterType="String">
+        select * from books where book_name LIKE "%#{name}%";
+    </select>
+    <select id="getBookByTag" resultType="com.re21.bouquiniste.modules.Book">
+        select * from books where tags like %#{tag}%;
+    </select>
+    <select id="getBookById" resultType="com.re21.bouquiniste.modules.Book">
+        select * from books where book_id=#{id};
+    </select>
+    <select id="getAllBooks" resultType="com.re21.bouquiniste.modules.Book">
+        select * from books
+    </select>
+    <select id="getSize" resultType="java.lang.Integer">
+        select count(book_id) from books
+    </select>
+</mapper>

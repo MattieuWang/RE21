@@ -1,0 +1,466 @@
+2020-03-14 14:47:29.222 DEBUG 9452 --- [http-nio-8080-exec-2] c.r.b.dao.BookMapper.getBookById         : ==>  Preparing: select * from books where book_id=?; 
+2020-03-14 14:47:29.247 DEBUG 9452 --- [http-nio-8080-exec-2] c.r.b.dao.BookMapper.getBookById         : ==> Parameters: 1(Integer)
+2020-03-14 14:47:29.256 DEBUG 9452 --- [http-nio-8080-exec-2] c.r.b.dao.BookMapper.getBookById         : <==      Total: 1
+2020-03-14 14:47:59.483 DEBUG 9452 --- [http-nio-8080-exec-4] c.r.b.dao.BookMapper.getBookById         : ==>  Preparing: select * from books where book_id=?; 
+2020-03-14 14:47:59.484 DEBUG 9452 --- [http-nio-8080-exec-4] c.r.b.dao.BookMapper.getBookById         : ==> Parameters: 1(Integer)
+2020-03-14 14:47:59.485 DEBUG 9452 --- [http-nio-8080-exec-4] c.r.b.dao.BookMapper.getBookById         : <==      Total: 1
+2020-03-14 14:48:02.288 DEBUG 9452 --- [http-nio-8080-exec-3] c.r.b.dao.BookMapper.getBookById         : ==>  Preparing: select * from books where book_id=?; 
+2020-03-14 14:48:02.288 DEBUG 9452 --- [http-nio-8080-exec-3] c.r.b.dao.BookMapper.getBookById         : ==> Parameters: 1(Integer)
+2020-03-14 14:48:02.290 DEBUG 9452 --- [http-nio-8080-exec-3] c.r.b.dao.BookMapper.getBookById         : <==      Total: 1
+2020-03-14 14:48:06.213 DEBUG 9452 --- [http-nio-8080-exec-6] c.r.b.dao.BookMapper.getBookById         : ==>  Preparing: select * from books where book_id=?; 
+2020-03-14 14:48:06.214 DEBUG 9452 --- [http-nio-8080-exec-6] c.r.b.dao.BookMapper.getBookById         : ==> Parameters: 1(Integer)
+2020-03-14 14:48:06.215 DEBUG 9452 --- [http-nio-8080-exec-6] c.r.b.dao.BookMapper.getBookById         : <==      Total: 1
+2020-03-14 14:48:09.296 DEBUG 9452 --- [http-nio-8080-exec-7] c.r.b.dao.BookMapper.getBookById         : ==>  Preparing: select * from books where book_id=?; 
+2020-03-14 14:48:09.296 DEBUG 9452 --- [http-nio-8080-exec-7] c.r.b.dao.BookMapper.getBookById         : ==> Parameters: 1(Integer)
+2020-03-14 14:48:09.297 DEBUG 9452 --- [http-nio-8080-exec-7] c.r.b.dao.BookMapper.getBookById         : <==      Total: 1
+2020-03-14 14:48:29.295  WARN 9452 --- [http-nio-8080-exec-8] o.s.web.servlet.PageNotFound             : No mapping for GET /login
+2020-03-14 15:00:37.172  WARN 9452 --- [http-nio-8080-exec-1] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [368] milliseconds.
+2020-03-14 15:00:37.461  WARN 9452 --- [http-nio-8080-exec-3] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2020-03-14 15:21:30.668  INFO 17912 --- [restartedMain] com.re21.bouquiniste.MyApplication       : Starting MyApplication on LAPTOP-KE6H9O4V with PID 17912 (C:\Users\Felix\Desktop\javaMVC\re21\target\classes started by Felix in C:\Users\Felix\Desktop\javaMVC\re21)
+2020-03-14 15:21:30.670 DEBUG 17912 --- [restartedMain] com.re21.bouquiniste.MyApplication       : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-03-14 15:21:30.670  INFO 17912 --- [restartedMain] com.re21.bouquiniste.MyApplication       : No active profile set, falling back to default profiles: default
+2020-03-14 15:21:30.705  INFO 17912 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-03-14 15:21:30.706  INFO 17912 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-03-14 15:21:31.490  INFO 17912 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-03-14 15:21:31.497  INFO 17912 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-14 15:21:31.497  INFO 17912 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-14 15:21:31.557  INFO 17912 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-14 15:21:31.557  INFO 17912 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 846 ms
+2020-03-14 15:21:31.994  INFO 17912 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 4e991642-e759-4b17-a178-2671e1882d7b
+
+2020-03-14 15:21:32.056  INFO 17912 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@33d6ef23, org.springframework.security.web.context.SecurityContextPersistenceFilter@5f0ef923, org.springframework.security.web.header.HeaderWriterFilter@59a9146a, org.springframework.security.web.csrf.CsrfFilter@30be721c, org.springframework.security.web.authentication.logout.LogoutFilter@2de142ea, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@60ae234e, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@73294df4, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@1e08ac20, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@643b495, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@78071085, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@518c7810, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5834cec6, org.springframework.security.web.session.SessionManagementFilter@5158de4e, org.springframework.security.web.access.ExceptionTranslationFilter@5f3a5a5c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4746dd55]
+2020-03-14 15:21:32.089  INFO 17912 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-03-14 15:21:32.144  INFO 17912 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-14 15:21:32.145  INFO 17912 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-03-14 15:21:32.148  INFO 17912 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2020-03-14 15:21:32.149  INFO 17912 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-03-14 15:21:32.153  INFO 17912 --- [restartedMain] com.re21.bouquiniste.MyApplication       : Started MyApplication in 1.757 seconds (JVM running for 2.729)
+2020-03-14 15:21:38.937  WARN 17912 --- [http-nio-8080-exec-1] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [351] milliseconds.
+2020-03-14 15:23:14.537  INFO 17320 --- [restartedMain] com.re21.bouquiniste.MyApplication       : Starting MyApplication on LAPTOP-KE6H9O4V with PID 17320 (C:\Users\Felix\Desktop\javaMVC\re21\target\classes started by Felix in C:\Users\Felix\Desktop\javaMVC\re21)
+2020-03-14 15:23:14.539 DEBUG 17320 --- [restartedMain] com.re21.bouquiniste.MyApplication       : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-03-14 15:23:14.539  INFO 17320 --- [restartedMain] com.re21.bouquiniste.MyApplication       : No active profile set, falling back to default profiles: default
+2020-03-14 15:23:14.578  INFO 17320 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-03-14 15:23:14.578  INFO 17320 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-03-14 15:23:15.329  INFO 17320 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-03-14 15:23:15.335  INFO 17320 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-14 15:23:15.336  INFO 17320 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-14 15:23:15.396  INFO 17320 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-14 15:23:15.396  INFO 17320 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 812 ms
+2020-03-14 15:23:15.781  INFO 17320 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: d3d3472f-da35-412e-b7bc-2c5c515288be
+
+2020-03-14 15:23:15.830  INFO 17320 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1ea1c0a6, org.springframework.security.web.context.SecurityContextPersistenceFilter@35be2888, org.springframework.security.web.header.HeaderWriterFilter@1e906cde, org.springframework.security.web.csrf.CsrfFilter@6a4def7b, org.springframework.security.web.authentication.logout.LogoutFilter@13c44b60, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@432bb3ed, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@74f6b35e, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@50b828ca, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@23148c51, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@70b7abd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@13d6e0d6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@61118293, org.springframework.security.web.session.SessionManagementFilter@66f605d9, org.springframework.security.web.access.ExceptionTranslationFilter@6e7705b9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@75403dc5]
+2020-03-14 15:23:15.857  INFO 17320 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-03-14 15:23:15.908  INFO 17320 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-14 15:23:15.908  INFO 17320 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-03-14 15:23:15.911  INFO 17320 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2020-03-14 15:23:15.912  INFO 17320 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-03-14 15:23:15.915  INFO 17320 --- [restartedMain] com.re21.bouquiniste.MyApplication       : Started MyApplication in 1.654 seconds (JVM running for 2.569)
+2020-03-14 15:23:23.237  WARN 17320 --- [http-nio-8080-exec-1] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [335] milliseconds.
+2020-03-14 15:25:03.626  INFO 20164 --- [restartedMain] com.re21.bouquiniste.MyApplication       : Starting MyApplication on LAPTOP-KE6H9O4V with PID 20164 (C:\Users\Felix\Desktop\javaMVC\re21\target\classes started by Felix in C:\Users\Felix\Desktop\javaMVC\re21)
+2020-03-14 15:25:03.628 DEBUG 20164 --- [restartedMain] com.re21.bouquiniste.MyApplication       : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-03-14 15:25:03.628  INFO 20164 --- [restartedMain] com.re21.bouquiniste.MyApplication       : No active profile set, falling back to default profiles: default
+2020-03-14 15:25:03.666  INFO 20164 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-03-14 15:25:03.667  INFO 20164 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-03-14 15:25:04.381  INFO 20164 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-03-14 15:25:04.388  INFO 20164 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-14 15:25:04.388  INFO 20164 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-14 15:25:04.446  INFO 20164 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-14 15:25:04.446  INFO 20164 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 779 ms
+2020-03-14 15:25:04.834  INFO 20164 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-03-14 15:25:04.868  INFO 20164 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-14 15:25:04.869  INFO 20164 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-03-14 15:25:04.872  INFO 20164 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2020-03-14 15:25:04.872  INFO 20164 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-03-14 15:25:04.875  INFO 20164 --- [restartedMain] com.re21.bouquiniste.MyApplication       : Started MyApplication in 1.532 seconds (JVM running for 2.692)
+2020-03-14 15:25:08.601  INFO 20164 --- [http-nio-8080-exec-1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-03-14 15:25:08.684 DEBUG 20164 --- [http-nio-8080-exec-1] c.r.b.dao.UserMapper.loginUser           : ==>  Preparing: select count(id) from users where username=? and password=? 
+2020-03-14 15:25:08.697 DEBUG 20164 --- [http-nio-8080-exec-1] c.r.b.dao.UserMapper.loginUser           : ==> Parameters: null, null
+2020-03-14 15:25:08.768 ERROR 20164 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: Unknown column 'id' in 'field list'
+### The error may exist in file [C:\Users\Felix\Desktop\javaMVC\re21\target\classes\static\mapper\UserMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: select count(id) from users where username=? and password=?
+### Cause: java.sql.SQLSyntaxErrorException: Unknown column 'id' in 'field list'
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: Unknown column 'id' in 'field list'] with root cause
+
+java.sql.SQLSyntaxErrorException: Unknown column 'id' in 'field list'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:497) ~[druid-1.1.21.jar:1.1.21]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59) ~[mybatis-3.5.4.jar:3.5.4]
+	at com.sun.proxy.$Proxy86.execute(Unknown Source) ~[na:na]
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:64) ~[mybatis-3.5.4.jar:3.5.4]
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79) ~[mybatis-3.5.4.jar:3.5.4]
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63) ~[mybatis-3.5.4.jar:3.5.4]
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324) ~[mybatis-3.5.4.jar:3.5.4]
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156) ~[mybatis-3.5.4.jar:3.5.4]
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109) ~[mybatis-3.5.4.jar:3.5.4]
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83) ~[mybatis-3.5.4.jar:3.5.4]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147) ~[mybatis-3.5.4.jar:3.5.4]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140) ~[mybatis-3.5.4.jar:3.5.4]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:76) ~[mybatis-3.5.4.jar:3.5.4]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426) ~[mybatis-spring-2.0.3.jar:2.0.3]
+	at com.sun.proxy.$Proxy69.selectOne(Unknown Source) ~[na:na]
+	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:159) ~[mybatis-spring-2.0.3.jar:2.0.3]
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:87) ~[mybatis-3.5.4.jar:3.5.4]
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:144) ~[mybatis-3.5.4.jar:3.5.4]
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85) ~[mybatis-3.5.4.jar:3.5.4]
+	at com.sun.proxy.$Proxy70.loginUser(Unknown Source) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344) ~[spring-aop-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198) ~[spring-aop-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139) ~[spring-tx-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212) ~[spring-aop-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at com.sun.proxy.$Proxy71.loginUser(Unknown Source) ~[na:na]
+	at com.re21.bouquiniste.service.LoginService.userLogin(LoginService.java:21) ~[classes/:na]
+	at com.re21.bouquiniste.controller.BookController.login(BookController.java:39) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:94) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1639) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+2020-03-14 15:25:14.940 DEBUG 20164 --- [http-nio-8080-exec-3] c.r.b.dao.UserMapper.loginUser           : ==>  Preparing: select count(id) from users where username=? and password=? 
+2020-03-14 15:25:14.940 DEBUG 20164 --- [http-nio-8080-exec-3] c.r.b.dao.UserMapper.loginUser           : ==> Parameters: wang(String), 123(String)
+2020-03-14 15:25:14.942 ERROR 20164 --- [http-nio-8080-exec-3] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: Unknown column 'id' in 'field list'
+### The error may exist in file [C:\Users\Felix\Desktop\javaMVC\re21\target\classes\static\mapper\UserMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: select count(id) from users where username=? and password=?
+### Cause: java.sql.SQLSyntaxErrorException: Unknown column 'id' in 'field list'
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: Unknown column 'id' in 'field list'] with root cause
+
+java.sql.SQLSyntaxErrorException: Unknown column 'id' in 'field list'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:497) ~[druid-1.1.21.jar:1.1.21]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59) ~[mybatis-3.5.4.jar:3.5.4]
+	at com.sun.proxy.$Proxy86.execute(Unknown Source) ~[na:na]
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:64) ~[mybatis-3.5.4.jar:3.5.4]
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79) ~[mybatis-3.5.4.jar:3.5.4]
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63) ~[mybatis-3.5.4.jar:3.5.4]
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324) ~[mybatis-3.5.4.jar:3.5.4]
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156) ~[mybatis-3.5.4.jar:3.5.4]
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109) ~[mybatis-3.5.4.jar:3.5.4]
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83) ~[mybatis-3.5.4.jar:3.5.4]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147) ~[mybatis-3.5.4.jar:3.5.4]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140) ~[mybatis-3.5.4.jar:3.5.4]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:76) ~[mybatis-3.5.4.jar:3.5.4]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426) ~[mybatis-spring-2.0.3.jar:2.0.3]
+	at com.sun.proxy.$Proxy69.selectOne(Unknown Source) ~[na:na]
+	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:159) ~[mybatis-spring-2.0.3.jar:2.0.3]
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:87) ~[mybatis-3.5.4.jar:3.5.4]
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:144) ~[mybatis-3.5.4.jar:3.5.4]
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85) ~[mybatis-3.5.4.jar:3.5.4]
+	at com.sun.proxy.$Proxy70.loginUser(Unknown Source) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344) ~[spring-aop-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198) ~[spring-aop-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139) ~[spring-tx-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212) ~[spring-aop-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at com.sun.proxy.$Proxy71.loginUser(Unknown Source) ~[na:na]
+	at com.re21.bouquiniste.service.LoginService.userLogin(LoginService.java:21) ~[classes/:na]
+	at com.re21.bouquiniste.controller.BookController.login(BookController.java:39) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:94) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1639) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+2020-03-14 15:26:00.878  INFO 16980 --- [restartedMain] com.re21.bouquiniste.MyApplication       : Starting MyApplication on LAPTOP-KE6H9O4V with PID 16980 (C:\Users\Felix\Desktop\javaMVC\re21\target\classes started by Felix in C:\Users\Felix\Desktop\javaMVC\re21)
+2020-03-14 15:26:00.880 DEBUG 16980 --- [restartedMain] com.re21.bouquiniste.MyApplication       : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-03-14 15:26:00.880  INFO 16980 --- [restartedMain] com.re21.bouquiniste.MyApplication       : No active profile set, falling back to default profiles: default
+2020-03-14 15:26:00.922  INFO 16980 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-03-14 15:26:00.923  INFO 16980 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-03-14 15:26:01.642  INFO 16980 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-03-14 15:26:01.647  INFO 16980 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-14 15:26:01.648  INFO 16980 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-14 15:26:01.707  INFO 16980 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-14 15:26:01.707  INFO 16980 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 784 ms
+2020-03-14 15:26:02.100  INFO 16980 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-03-14 15:26:02.136  INFO 16980 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-14 15:26:02.136  INFO 16980 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-03-14 15:26:02.139  INFO 16980 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2020-03-14 15:26:02.141  INFO 16980 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-03-14 15:26:02.144  INFO 16980 --- [restartedMain] com.re21.bouquiniste.MyApplication       : Started MyApplication in 1.553 seconds (JVM running for 2.455)
+2020-03-14 15:26:06.580  INFO 16980 --- [http-nio-8080-exec-1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-03-14 15:26:06.653 DEBUG 16980 --- [http-nio-8080-exec-1] c.r.b.dao.UserMapper.loginUser           : ==>  Preparing: select count(user_id) from users where username=? and password=? 
+2020-03-14 15:26:06.666 DEBUG 16980 --- [http-nio-8080-exec-1] c.r.b.dao.UserMapper.loginUser           : ==> Parameters: wang(String), 123(String)
+2020-03-14 15:26:06.696 DEBUG 16980 --- [http-nio-8080-exec-1] c.r.b.dao.UserMapper.loginUser           : <==      Total: 1
+2020-03-14 15:26:06.709 ERROR 16980 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+
+java.lang.NullPointerException: null
+	at com.re21.bouquiniste.controller.BookController.login(BookController.java:39) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:94) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1639) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+2020-03-14 15:27:59.535  INFO 21416 --- [restartedMain] com.re21.bouquiniste.MyApplication       : Starting MyApplication on LAPTOP-KE6H9O4V with PID 21416 (C:\Users\Felix\Desktop\javaMVC\re21\target\classes started by Felix in C:\Users\Felix\Desktop\javaMVC\re21)
+2020-03-14 15:27:59.537 DEBUG 21416 --- [restartedMain] com.re21.bouquiniste.MyApplication       : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-03-14 15:27:59.537  INFO 21416 --- [restartedMain] com.re21.bouquiniste.MyApplication       : No active profile set, falling back to default profiles: default
+2020-03-14 15:27:59.578  INFO 21416 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-03-14 15:27:59.579  INFO 21416 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-03-14 15:28:00.303  INFO 21416 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-03-14 15:28:00.309  INFO 21416 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-14 15:28:00.309  INFO 21416 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-14 15:28:00.369  INFO 21416 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-14 15:28:00.369  INFO 21416 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 790 ms
+2020-03-14 15:28:00.766  INFO 21416 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-03-14 15:28:00.808  INFO 21416 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-14 15:28:00.808  INFO 21416 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-03-14 15:28:00.812  INFO 21416 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2020-03-14 15:28:00.813  INFO 21416 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-03-14 15:28:00.815  INFO 21416 --- [restartedMain] com.re21.bouquiniste.MyApplication       : Started MyApplication in 1.586 seconds (JVM running for 2.517)
+2020-03-14 15:28:10.604  INFO 21416 --- [http-nio-8080-exec-1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-03-14 15:28:10.678 DEBUG 21416 --- [http-nio-8080-exec-1] c.r.b.dao.UserMapper.loginUser           : ==>  Preparing: select count(user_id) from users where username=? and password=? 
+2020-03-14 15:28:10.691 DEBUG 21416 --- [http-nio-8080-exec-1] c.r.b.dao.UserMapper.loginUser           : ==> Parameters: wang(String), 123(String)
+2020-03-14 15:28:10.707 DEBUG 21416 --- [http-nio-8080-exec-1] c.r.b.dao.UserMapper.loginUser           : <==      Total: 1
+2020-03-14 15:28:51.627  INFO 19044 --- [restartedMain] com.re21.bouquiniste.MyApplication       : Starting MyApplication on LAPTOP-KE6H9O4V with PID 19044 (C:\Users\Felix\Desktop\javaMVC\re21\target\classes started by Felix in C:\Users\Felix\Desktop\javaMVC\re21)
+2020-03-14 15:28:51.629 DEBUG 19044 --- [restartedMain] com.re21.bouquiniste.MyApplication       : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-03-14 15:28:51.629  INFO 19044 --- [restartedMain] com.re21.bouquiniste.MyApplication       : No active profile set, falling back to default profiles: default
+2020-03-14 15:28:51.663  INFO 19044 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-03-14 15:28:51.664  INFO 19044 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-03-14 15:28:52.383  INFO 19044 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-03-14 15:28:52.388  INFO 19044 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-14 15:28:52.389  INFO 19044 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-14 15:28:52.449  INFO 19044 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-14 15:28:52.450  INFO 19044 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 786 ms
+2020-03-14 15:28:52.848  INFO 19044 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-03-14 15:28:52.882  INFO 19044 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-14 15:28:52.882  INFO 19044 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-03-14 15:28:52.885  INFO 19044 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2020-03-14 15:28:52.886  INFO 19044 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-03-14 15:28:52.889  INFO 19044 --- [restartedMain] com.re21.bouquiniste.MyApplication       : Started MyApplication in 1.559 seconds (JVM running for 2.479)
+2020-03-14 15:29:24.620  INFO 19044 --- [http-nio-8080-exec-1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-03-14 15:29:24.692 DEBUG 19044 --- [http-nio-8080-exec-1] c.r.b.dao.UserMapper.loginUser           : ==>  Preparing: select count(user_id) from users where username=? and password=? 
+2020-03-14 15:29:24.704 DEBUG 19044 --- [http-nio-8080-exec-1] c.r.b.dao.UserMapper.loginUser           : ==> Parameters: wang(String), 123(String)
+2020-03-14 15:29:24.718 DEBUG 19044 --- [http-nio-8080-exec-1] c.r.b.dao.UserMapper.loginUser           : <==      Total: 1
+2020-03-14 15:29:24.720 DEBUG 19044 --- [http-nio-8080-exec-1] c.r.b.controller.BookController          : login error
+2020-03-14 15:29:30.631 DEBUG 19044 --- [http-nio-8080-exec-3] c.r.b.dao.UserMapper.loginUser           : ==>  Preparing: select count(user_id) from users where username=? and password=? 
+2020-03-14 15:29:30.632 DEBUG 19044 --- [http-nio-8080-exec-3] c.r.b.dao.UserMapper.loginUser           : ==> Parameters: wang(String), aaa(String)
+2020-03-14 15:29:30.633 DEBUG 19044 --- [http-nio-8080-exec-3] c.r.b.dao.UserMapper.loginUser           : <==      Total: 1
+2020-03-14 15:29:30.634 DEBUG 19044 --- [http-nio-8080-exec-3] c.r.b.dao.UserMapper.getUserByUsername   : ==>  Preparing: select * from users where username = ?; 
+2020-03-14 15:29:30.634 DEBUG 19044 --- [http-nio-8080-exec-3] c.r.b.dao.UserMapper.getUserByUsername   : ==> Parameters: wang(String)
+2020-03-14 15:29:30.637 DEBUG 19044 --- [http-nio-8080-exec-3] c.r.b.dao.UserMapper.getUserByUsername   : <==      Total: 1
+2020-03-14 15:29:30.637 DEBUG 19044 --- [http-nio-8080-exec-3] c.r.b.dao.RoleMapper.getRoleByUserId     : ==>  Preparing: select r.* from roles r, role_user ru where ru.user_id = ? and ru.role_id = r.role_id; 
+2020-03-14 15:29:30.638 DEBUG 19044 --- [http-nio-8080-exec-3] c.r.b.dao.RoleMapper.getRoleByUserId     : ==> Parameters: 1(Integer)
+2020-03-14 15:29:30.652 DEBUG 19044 --- [http-nio-8080-exec-3] c.r.b.dao.RoleMapper.getRoleByUserId     : <==      Total: 1
+2020-03-14 15:37:48.260  INFO 12524 --- [restartedMain] com.re21.bouquiniste.MyApplication       : Starting MyApplication on LAPTOP-KE6H9O4V with PID 12524 (C:\Users\Felix\Desktop\javaMVC\re21\target\classes started by Felix in C:\Users\Felix\Desktop\javaMVC\re21)
+2020-03-14 15:37:48.262 DEBUG 12524 --- [restartedMain] com.re21.bouquiniste.MyApplication       : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-03-14 15:37:48.263  INFO 12524 --- [restartedMain] com.re21.bouquiniste.MyApplication       : No active profile set, falling back to default profiles: default
+2020-03-14 15:37:48.297  INFO 12524 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-03-14 15:37:48.297  INFO 12524 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-03-14 15:37:48.970  INFO 12524 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-03-14 15:37:48.975  INFO 12524 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-14 15:37:48.976  INFO 12524 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-14 15:37:49.037  INFO 12524 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-14 15:37:49.037  INFO 12524 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 740 ms
+2020-03-14 15:37:49.408  INFO 12524 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-03-14 15:37:49.440  INFO 12524 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-14 15:37:49.441  INFO 12524 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-03-14 15:37:49.444  INFO 12524 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2020-03-14 15:37:49.445  INFO 12524 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-03-14 15:37:49.448  INFO 12524 --- [restartedMain] com.re21.bouquiniste.MyApplication       : Started MyApplication in 1.455 seconds (JVM running for 2.34)
+2020-03-14 15:37:53.200  INFO 12524 --- [http-nio-8080-exec-1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-03-14 15:37:53.271 DEBUG 12524 --- [http-nio-8080-exec-1] c.r.b.dao.UserMapper.loginUser           : ==>  Preparing: select count(user_id) from users where username=? and password=? 
+2020-03-14 15:37:53.284 DEBUG 12524 --- [http-nio-8080-exec-1] c.r.b.dao.UserMapper.loginUser           : ==> Parameters: wang(String), aaa(String)
+2020-03-14 15:37:53.298 DEBUG 12524 --- [http-nio-8080-exec-1] c.r.b.dao.UserMapper.loginUser           : <==      Total: 1
+2020-03-14 15:37:53.300 DEBUG 12524 --- [http-nio-8080-exec-1] c.r.b.dao.UserMapper.getUserByUsername   : ==>  Preparing: select * from users where username = ?; 
+2020-03-14 15:37:53.301 DEBUG 12524 --- [http-nio-8080-exec-1] c.r.b.dao.UserMapper.getUserByUsername   : ==> Parameters: wang(String)
+2020-03-14 15:37:53.303 DEBUG 12524 --- [http-nio-8080-exec-1] c.r.b.dao.UserMapper.getUserByUsername   : <==      Total: 1
+2020-03-14 15:37:53.303 DEBUG 12524 --- [http-nio-8080-exec-1] c.r.b.dao.RoleMapper.getRoleByUserId     : ==>  Preparing: select r.* from roles r, role_user ru where ru.user_id = ? and ru.role_id = r.role_id; 
+2020-03-14 15:37:53.304 DEBUG 12524 --- [http-nio-8080-exec-1] c.r.b.dao.RoleMapper.getRoleByUserId     : ==> Parameters: 1(Integer)
+2020-03-14 15:37:53.304 DEBUG 12524 --- [http-nio-8080-exec-1] c.r.b.dao.RoleMapper.getRoleByUserId     : <==      Total: 1
+2020-03-14 15:39:16.533 DEBUG 12524 --- [http-nio-8080-exec-7] c.r.b.dao.UserMapper.loginUser           : ==>  Preparing: select count(user_id) from users where username=? and password=? 
+2020-03-14 15:39:16.534 DEBUG 12524 --- [http-nio-8080-exec-7] c.r.b.dao.UserMapper.loginUser           : ==> Parameters: wang(String), aaa(String)
+2020-03-14 15:39:16.535 DEBUG 12524 --- [http-nio-8080-exec-7] c.r.b.dao.UserMapper.loginUser           : <==      Total: 1
+2020-03-14 15:39:16.535 DEBUG 12524 --- [http-nio-8080-exec-7] c.r.b.dao.UserMapper.getUserByUsername   : ==>  Preparing: select * from users where username = ?; 
+2020-03-14 15:39:16.535 DEBUG 12524 --- [http-nio-8080-exec-7] c.r.b.dao.UserMapper.getUserByUsername   : ==> Parameters: wang(String)
+2020-03-14 15:39:16.536 DEBUG 12524 --- [http-nio-8080-exec-7] c.r.b.dao.UserMapper.getUserByUsername   : <==      Total: 1
+2020-03-14 15:39:16.537 DEBUG 12524 --- [http-nio-8080-exec-7] c.r.b.dao.RoleMapper.getRoleByUserId     : ==>  Preparing: select r.* from roles r, role_user ru where ru.user_id = ? and ru.role_id = r.role_id; 
+2020-03-14 15:39:16.537 DEBUG 12524 --- [http-nio-8080-exec-7] c.r.b.dao.RoleMapper.getRoleByUserId     : ==> Parameters: 1(Integer)
+2020-03-14 15:39:16.538 DEBUG 12524 --- [http-nio-8080-exec-7] c.r.b.dao.RoleMapper.getRoleByUserId     : <==      Total: 1
+2020-03-14 15:39:23.622 DEBUG 12524 --- [http-nio-8080-exec-9] c.r.b.dao.UserMapper.loginUser           : ==>  Preparing: select count(user_id) from users where username=? and password=? 
+2020-03-14 15:39:23.623 DEBUG 12524 --- [http-nio-8080-exec-9] c.r.b.dao.UserMapper.loginUser           : ==> Parameters: wang(String), aaa(String)
+2020-03-14 15:39:23.624 DEBUG 12524 --- [http-nio-8080-exec-9] c.r.b.dao.UserMapper.loginUser           : <==      Total: 1
+2020-03-14 15:39:23.625 DEBUG 12524 --- [http-nio-8080-exec-9] c.r.b.dao.UserMapper.getUserByUsername   : ==>  Preparing: select * from users where username = ?; 
+2020-03-14 15:39:23.625 DEBUG 12524 --- [http-nio-8080-exec-9] c.r.b.dao.UserMapper.getUserByUsername   : ==> Parameters: wang(String)
+2020-03-14 15:39:23.627 DEBUG 12524 --- [http-nio-8080-exec-9] c.r.b.dao.UserMapper.getUserByUsername   : <==      Total: 1
+2020-03-14 15:39:23.628 DEBUG 12524 --- [http-nio-8080-exec-9] c.r.b.dao.RoleMapper.getRoleByUserId     : ==>  Preparing: select r.* from roles r, role_user ru where ru.user_id = ? and ru.role_id = r.role_id; 
+2020-03-14 15:39:23.629 DEBUG 12524 --- [http-nio-8080-exec-9] c.r.b.dao.RoleMapper.getRoleByUserId     : ==> Parameters: 1(Integer)
+2020-03-14 15:39:23.630 DEBUG 12524 --- [http-nio-8080-exec-9] c.r.b.dao.RoleMapper.getRoleByUserId     : <==      Total: 1
+2020-03-14 16:03:34.152 DEBUG 12524 --- [http-nio-8080-exec-4] c.r.b.dao.UserMapper.loginUser           : ==>  Preparing: select count(user_id) from users where username=? and password=? 
+2020-03-14 16:03:34.153 DEBUG 12524 --- [http-nio-8080-exec-4] c.r.b.dao.UserMapper.loginUser           : ==> Parameters: wang(String), aaa(String)
+2020-03-14 16:03:34.154 DEBUG 12524 --- [http-nio-8080-exec-4] c.r.b.dao.UserMapper.loginUser           : <==      Total: 1
+2020-03-14 16:03:34.154 DEBUG 12524 --- [http-nio-8080-exec-4] c.r.b.dao.UserMapper.getUserByUsername   : ==>  Preparing: select * from users where username = ?; 
+2020-03-14 16:03:34.155 DEBUG 12524 --- [http-nio-8080-exec-4] c.r.b.dao.UserMapper.getUserByUsername   : ==> Parameters: wang(String)
+2020-03-14 16:03:34.156 DEBUG 12524 --- [http-nio-8080-exec-4] c.r.b.dao.UserMapper.getUserByUsername   : <==      Total: 1
+2020-03-14 16:03:34.156 DEBUG 12524 --- [http-nio-8080-exec-4] c.r.b.dao.RoleMapper.getRoleByUserId     : ==>  Preparing: select r.* from roles r, role_user ru where ru.user_id = ? and ru.role_id = r.role_id; 
+2020-03-14 16:03:34.156 DEBUG 12524 --- [http-nio-8080-exec-4] c.r.b.dao.RoleMapper.getRoleByUserId     : ==> Parameters: 1(Integer)
+2020-03-14 16:03:34.157 DEBUG 12524 --- [http-nio-8080-exec-4] c.r.b.dao.RoleMapper.getRoleByUserId     : <==      Total: 1
+2020-03-14 16:04:20.102 DEBUG 12524 --- [http-nio-8080-exec-2] c.r.b.dao.UserMapper.loginUser           : ==>  Preparing: select count(user_id) from users where username=? and password=? 
+2020-03-14 16:04:20.103 DEBUG 12524 --- [http-nio-8080-exec-2] c.r.b.dao.UserMapper.loginUser           : ==> Parameters: wang(String), 123(String)
+2020-03-14 16:04:20.104 DEBUG 12524 --- [http-nio-8080-exec-2] c.r.b.dao.UserMapper.loginUser           : <==      Total: 1

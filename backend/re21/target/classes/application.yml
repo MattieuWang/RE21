@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/bouquinste?serverTimezone=GMT&useSSL=false&allowPublicKeyRetrieval=true
+    username: root
+    password: 12345678
+  mvc:
+    servlet:
+      load-on-startup: 1
+logging:
+  level:
+    com.re21.bouquiniste: debug
+  file:
+    path: src/main/resources/logs
+
+mybatis:
+  mapper-locations: static/mapper/*.xml
