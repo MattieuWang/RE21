@@ -17,4 +17,5 @@ public interface UserMapper {
     int getSize();
     List<User> getAllUser();
     int loginUser(@Param("username") String username, @Param("password") String password);
+    int deleteUser(Integer id);
 }

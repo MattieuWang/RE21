@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title><span th:text="${user.getUsername()}"></span></title>
+</head>
+<body>
+    <form method="post" th:action="${user.getUser_id()}">
+        user id: <input type="text" th:value="${user.getUser_id()}" name="user_id" readonly><br>
+        username: <input type="text" th:value="${user.getUsername()}" name="username"><br>
+        phone: <input type="text" th:value="${user.getPhone()}" name="phone"><br>
+        email: <input type="text" th:value="${user.getEmail()}" name="email">
+        <div>
+            <input type="hidden" name="_method" value="put">
+            <input type="submit" value="modifier">
+        </div>
+<!--        <input type="hidden" name="_method" value="delete">-->
+<!--        <input type="submit" value="delete">-->
+    </form>
+    <a href="/re21-v1/addbooks">insert a book</a>
+    <h2>books:</h2>
+    <div>
+        <div th:each="book:${books}">
+            book name: <span th:text="${book.getBook_name()}"></span><br>
+            description: <span th:text="${book.getBook_desc()}"></span><br>
+            book count: <span th:text="${book.getBook_num()}"></span><br>
+            book images:<br>
+            <div>
+                <th th:each="image:${book.getImage_location()}">
+                    <img th:src="${image}" height="200px" width="100px">
+                </th>
+            </div>
+
+        </div>
+    </div>
+
+
+</body>
+</html>

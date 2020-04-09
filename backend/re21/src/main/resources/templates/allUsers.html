@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>All Users</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    </head>
+<body>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>user_id</th>
+                <th>username</th>
+                <th>phone</th>
+                <th>email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="user:${users}">
+
+                <td><span th:text="${user.getUser_id()}" ></span> </td>
+                <td><span th:text="${user.getUsername()}"></span> </td>
+                <td><span th:text="${user.getPhone()}" ></span> </td>
+                <td><span th:text="${user.getEmail()}" ></span> </td>
+                <td>
+                    <a th:href="@{'user/'+${user.getUser_id()}}">modifier</a>
+                </td>
+                <td>
+                    <a th:href="@{'delete/'+${user.getUser_id()}}">delete</a>
+                </td>
+
+<!--                <td><button type="button" th:href="@{'user/'+${user.getUser_id()}}">modifier</button></td>-->
+            </tr>
+        </tbody>
+    </table>
+
+    <div>
+        <a  th:href="@{'insertUser'}">Insert user</a>
+    </div>
+</body>
+</html>

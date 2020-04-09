@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Insert books</title>
+</head>
+<body>
+    userId: <span th:text="${session.userId}"></span>
+    <form id="book" method="post" th:action="book" enctype="multipart/form-data">
+        book name: <input type="text" name="book_name"><br>
+        book description:<br>
+        <textarea rows="10" cols="30" name="book_desc">une petite phrase de description
+        </textarea><br>
+        book num: <select name="book_num">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">infini</option>
+    </select><br>
+        tags: <input type="text" placeholder="#anglais,#math,#informatique..." name="tags"><br>
+        images: <input type="file" name="uploadImage" value="choisir au moins une image"><br>
+        <input type="file" name="uploadImage" value="choisir au moins une image"><br>
+        <input type="file" name="uploadImage" value="choisir au moins une image"><br>
+        <input type="submit" value="valider">
+    </form>
+</body>
+</html>

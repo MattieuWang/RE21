@@ -7,8 +7,11 @@
         (#{user_id} ,#{username},#{password},#{phone},#{email});
     </insert>
     <update id="updateUser">
-        set password=#{password},phone=#{phone},email=#{email} where user_id = #{user_id};
+        update users set username=#{username},phone=#{phone},email=#{email} where user_id = #{user_id};
     </update>
+    <delete id="deleteUser">
+        delete from users where user_id = #{id};
+    </delete>
 
     <select id="getUserByUserId" resultType="com.re21.bouquiniste.modules.User">
         select * from users where user_id=#{id};

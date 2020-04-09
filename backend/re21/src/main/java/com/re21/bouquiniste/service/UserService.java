@@ -5,6 +5,7 @@ import com.re21.bouquiniste.dao.UserMapper;
 import com.re21.bouquiniste.modules.Role;
 import com.re21.bouquiniste.modules.Role_User;
 import com.re21.bouquiniste.modules.User;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -13,6 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Service
+@Slf4j
 public class UserService {
 
     @Resource
@@ -28,6 +30,11 @@ public class UserService {
          return userMapper.updateUser(user);    //0 fail
     }
 
+    public User getUserByName(String username)
+    {
+        return userMapper.getUserByUsername(username);
+    }
+
     public User getUserById(Integer id)
     {
         return userMapper.getUserByUserId(id);
@@ -38,15 +45,10 @@ public class UserService {
         return userMapper.getUserByUsername(username);
     }
 
-    public String getAllUserByString()
+    public List<User> getAllUsers()
     {
-        String msg = "";
         List<User> users = userMapper.getAllUser();
-        for (User user: users)
-        {
-            msg += user.toString()+" \n";
-        }
-        return msg;
+        return users;
     }
 
     public int addUser(User user)
@@ -75,6 +77,14 @@ public class UserService {
         else
         {
             return 0;
+        }
+    }
+
+    public void deleteUser(Integer id)
+    {
+        if(userMapper.deleteUser(id) > 0)
+        {
+            log.debug("---------delete user---------");
         }
     }
 }

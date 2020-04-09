@@ -43,15 +43,21 @@ class DemoApplicationTests {
     @Test
     public void testInsertBook()
     {
-        Book book = new Book("book2","le deuxieme livre","/","pedagogie");
-        if(bookService.addBook(book, userService.getUserById(1))>0)
-        {
-            log.debug("ajouter un livre, gestion reussie");
-        }
-        else
-        {
-            log.debug("echouer a ajouter un livre");
-        }
+//        Book book = new Book("book2","le deuxieme livre","/","pedagogie");
+//        if(bookService.addBook(book, userService.getUserById(1))>0)
+//        {
+//            log.debug("ajouter un livre, gestion reussie");
+//        }
+//        else
+//        {
+//            log.debug("echouer a ajouter un livre");
+//        }
+    }
+
+    @Test
+    public void getBooks()
+    {
+        System.out.println(bookService.getBooksByNameAndUserId("2",1));
     }
 
 }
